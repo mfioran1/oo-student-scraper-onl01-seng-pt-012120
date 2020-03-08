@@ -7,7 +7,7 @@ class Scraper
     students = []
     html = open(index_url)
     index = Nokogiri::HTML(html)
-    binding.pry
+    index.css("div.student-class")
     
     
   end
